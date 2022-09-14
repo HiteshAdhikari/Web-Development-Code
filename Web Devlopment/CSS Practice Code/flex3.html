@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+            
+    /* These media queries only trigger when the condition is satisfied it's just same as if-else. */
+                /* Syntax: @media (max-width:300){
+                    you can write css in this 
+                } */
+                /* Only screen means we are only doing this for screen type. As their are different types of media queries */
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;           
+                background-color: cyan;
+                /* This will trigger from 0 to 300px width and after if given something than it takes that otherwise it will disappear if something bigger than 300px is their nothing will happen. */
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+                /* This will trigger from 300px to 500 px width and after if given something than it takes that otherwise nothing will happen. */
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+            #box-4{
+                display: block;
+                background-color: brown;
+            }
+            /* We can put different types of css elements */
+        }
+
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: green;
+                /* This will trigger from 800px to max width.  */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">This is for iPhone</div>
+    <div class="box" id="box-2">This is for Tablet </div>
+    <div class="box" id="box-3">This is for desktop computer</div>
+    <div class="box" id="box-4">This is for widescreen computer </div>
+</body>
+</html>

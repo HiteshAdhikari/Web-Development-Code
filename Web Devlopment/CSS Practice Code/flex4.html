@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css More on Selector </title>
+    <style>
+        /* From this all p(para tags )  which are inside div will be affected */
+        div p {
+            border: 2px solid rgb(254, 101, 101);
+            color: whitesmoke;
+            background-color: palevioletred;
+            font-size: 14px;
+            font-family: cursive;
+            font-style: bold;
+            text-align: center;
+
+        }
+
+        /* In this the li containing p (para tags) will be affected */
+        div li p{
+            border: 2px solid rgb(99, 20, 210);
+            color: whitesmoke;
+            background-color: rgb(94, 243, 71);
+            font-size: 14px;
+            font-family: cursive;
+            font-style: bold;
+            text-align: center;
+        }
+
+
+        /* In this, the direct child of div will be affected as you can see the div of cointainer and the div of firstpara(In this, para inside the li will not be affected.This means the indirect child of parent is not affected.) are affected. */
+        div > p{
+            color:brown;
+            background-color: goldenrod;
+            font-size: 33px;
+            text-align: center;
+        }
+
+
+        /* In this, p(para tags) coming right next/after to the div closing tags will  be affected. You can see a para tags coming after the ul is not affected(64).*/
+
+        div + p{
+            color:rgb(0, 255, 255);
+            background-color: black;
+            font-size: 33px;
+            text-align: center;
+        }
+            /* You will be wondering why not the para tag of div cointainer hving class = parent is not affected , when you wrote div > p ...The ans is that it was overwritten by the div + p css selector, which means the css will be applied on para tag direct after the div .   */
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="firstpara">
+            <ul>
+                <li>
+                    <p>What's Up?</p>
+                </li>
+            </ul>
+            <p>Hello bro </p>
+        </div>
+        <p>I am fine </p>
+    </div>
+    <p>What about you?</p>
+</body>
+</html>

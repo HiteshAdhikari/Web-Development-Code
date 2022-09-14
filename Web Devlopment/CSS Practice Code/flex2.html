@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Em vs Rem</title>
+</head>
+ 
+<style>
+    html {
+        font-size: 40px;
+    }
+
+ 
+    .parent {
+        border: 3px solid teal;
+        font-size: 30px;
+        /* (It set the width maximum to user view )  */
+        /* width: 100vw;*/
+
+        /* (It set the height maximum to user view )  */
+        /* height: 100vh; */
+    }
+ 
+    .child-rem {
+        border: 3px solid hotpink;
+        font-size: 1rem;
+        margin: 1.5rem;
+    }
+    .child-em {
+        border: 3px solid purple;
+        font-size: 1em;
+        margin: 1.5em;
+    }
+    /* em is a CSS unit relative to the font size of the parent element, 
+    while rem is a CSS unit relative to the font size of an html element.  */
+
+</style>
+ 
+<body>
+    <div class="parent">
+        This is parent
+        <div class="child-rem">
+            This is Child in rem unit system
+            </div>
+        <div class="child-em">
+            This is Child in em unit system
+        </div>
+       
+    </div>
+</body>
+ 
+</html>

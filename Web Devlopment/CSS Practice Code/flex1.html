@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height: 100vh; 
+            width: 100%;
+            border: 2px solid black;
+            /* THIS IS COMPULSARY TO USE FLEXBOX:- */
+            display: flex; /* Initialize the container as a flex box */
+            
+            /* Flex properties for a flex container */
+
+            /* flex-direction: row; (Default value of flex-direction is row) */
+             /* flex-direction: column; */
+             /* flex-direction: row-reverse;  */
+            /* flex-direction: column-reverse;   */
+            
+            /* Wrap helps when we use responsive of the website and minimize it will come in column but  if we don't use than it will come in row. */
+            /* flex-wrap: no-wrap;(Default value of flex-direction is no-wrap)  */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* This is a shorthand for flex-direction: and flex-wrap: ; */
+            /* flex-flow: row wrap-reverse; (From this we can set both thing at a time) */
+ 
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* align-items will justify the content in vertical direction */
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;  */
+
+            
+         }
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container or we can see that box/item at last. */
+            order: 2;
+
+                            /* Higher the value it will be large/short.*/
+            /* Grow helps in making object bigger  */
+             /* flex-grow: 9; */
+
+            /* Shrink helps in shrinking the object  */
+            /* flex-shrink: 2; */
+
+             /* (It wil grow/shrink acc to the flex-direction if its is row than it will grow in horizontal and if it is in column than it will grow/shrink in vertical ) */
+
+        }
+        #item-2{
+             flex-grow: 4;
+            /* flex-shrink: 3 ; */
+                      /* flex-basis is used to set the width acc. to the flex-drection. */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+        #item-3{
+            /* This is the shorthand for writting grow, shrink and flex-basis in one line. */
+                    flex: 3 2 630px;
+                /* Used for individual aligning , it will move only the third box*/
+             /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center;  */
+
+            } 
+
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

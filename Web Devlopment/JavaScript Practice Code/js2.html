@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Operator</title>
+            <!-- Don't have to write anything in body , just see console which is under the inspect  -->
+    <!-- NOT a good practise to put script before DOM. Put script just before the closing tag of body. -->
+    <!-- <script src=""></script> This is other method in this you can type the file name. -->
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Hey, Buddy</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis alias fugiat, iure voluptates magni voluptatem et pariatur deserunt vel mollitia saepe. Illo porro, aut quae saepe deleniti minima praesentium labore dolore cumque odio.</p>
+    </div>
+    
+    <script>
+        // This is a container and can hold values.
+         a = 22;    
+        //  You can declare variable  by typing var or without typing var .
+        var b = "Hitesh Adhikari";
+        console.log(a);
+        console.log(b);
+    
+        // Operator and Operand 
+        // OPERAND -> entities on which the operators are performed.
+        // In 2 + 3 , 2 and 3 are operand and "+" is the operator.
+        // 1. Unary Operator -> which is done only on single operand.
+        // Ex->
+        // d  = -a;
+        // console.log(d);
+        // 2. Binary Operator ->which is done only on two operand.
+        // Ex->
+        // e = 2+3;
+        // console.log(e);
+    
+        // Arithamtic operators:-
+        // like add, multiply , sub, divide, exponential(**), increment/decrement;
+        var p = 4;
+        var q = 2;
+        console.log("Adding p and q "+ (p+q));
+        console.log("Subtracting  p and q "+ (p-q));
+        console.log("Multipy p and q "+ (p*q));
+        console.log("Dividing p and q "+ (p/q));
+        console.log("p to the power q "+ (p**q));
+        console.log("Modulus of p and q  "+ (p%q));
+    
+        console.log("Incrementing p  "+ (p++));
+        console.log("value of p after increment is " + (p));      
+        console.log("Decrementing q "+ (q--));
+        console.log("value of q after decrement  is " + (q));
+    
+        // Two type of increment and decrement :-
+        // 1. ++p -> In this value will increment and than store in p.
+        // 2. p++ -> In this value in p will increment later  .
+        // 1.--p -> In this value will decrement and than store in p.
+        // 2. p-- -> In this value in p will decrement later.   
+    
+    </script>
+</body>
+</html>
