@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+.container{
+    display: flex;
+}
+.card{
+    padding: 23px 12px;
+    margin: 23px 12px;
+    /* border: 2px solid red; */
+    background-color: turquoise;
+    /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: 10px 13px green; */
+    /* box-shadow: -10px -13px green; (It will go to the opposite side of default postion */
+
+    /* box-shadow: offset-x offset-y blur-radius color; */
+    /* Blur radius helps to make the color blur */
+     /* box-shadow: 7px 5px 10px green; */
+    /* box-shadow: -7px -5px 10px green; */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    /* box-shadow: -7px -5px 10px 12px green;(Spread radius help in spreading the color) */
+
+    /* r-red, g-green, b-blue, a-alpha(help in making the color dark or light ,higher the value darker it will be and lower the value lighter it will be ) */
+    /* box-shadow: -7px -5px 10px 4px rgba(71, 172, 172, 0.5); */
+
+    /* Inset will make the box-shadow inside the box */
+    /* box-shadow: inset -6px -7px 7px 2px seagreen; */
+/* You can also give multiple box-shadow like this:- */
+    box-shadow: 3px 9px 2px rgb(238, 255, 0), 4px 10px 3px rgb(255, 0, 217);
+}
+.card h2{
+    /* text-shadow: x-axis y-axis blur color */
+    /* text-shadow: 3px 4px red; */
+    /* text-shadow: 3px 2px 2px white; */
+    text-shadow: 3px -2px 2px  white;
+}
+input[type ="button"]:active{
+    
+    border-radius: 10px;
+    box-shadow: inset -1px -2px 3px 1px rgb(125, 255, 181);
+
+}
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2>This is C++ Course</h2>
+           <p>I have started C++ course which does not mean that we will stop this course. We will continue this course to completion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium, doloremque enim repellat impedit autem nostrum facilis odio omnis optio voluptates beatae mollitia temporibus voluptas consequuntur harum animi totam molestiae labore architecto ratione qui!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat doloribus molestiae velit ipsum, aliquam officia ratione excepturi in officiis, incidunt quo est pariatur tempore ex, distinctio nostrum! Sint non doloribus rem obcaecati sunt.</p>
+        </div>
+        <div class="card" id="card-3">
+           <h2>Card3</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur molestiae, placeat quas perferendis quibusdam atque omnis distinctio obcaecati dolor, tempora unde deserunt iure nam. Iste labore eveniet esse deserunt?</p>
+           <input type="button" value="Submit" >
+        </div>
+    </div>
+</body>
+</html>

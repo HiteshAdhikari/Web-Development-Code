@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String and Methods </title>
+</head>
+
+<body>
+    <div class="con">
+        <h1 class = "head" style="font-family:Arial, Helvetica, sans-serif ;" >Hey Bro</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo provident. Pariatur necessitatibus incidunt sapiente autem repellat. Voluptates quisquam facilis itaque sit esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis a sapiente itaque?</p>
+    </div>
+    <script>
+        var str = "This is me, Hitesh Adhikari ";
+        console.log(str);
+        // First Occurence / It will see from left to right.
+        var ch = str.indexOf("is");
+        console.log(ch);
+        //  last occurence/ It will see from right to left.
+        var char = str.lastIndexOf("is");
+        console.log(char);
+
+                                   // String Function:-
+        // SLICE --> This will remove that from the string str and save in cointainer.
+        // Three ways are as follows:-
+
+        // 1.slice(start, end)
+        // It will stop before the ending number like you gave 9 so it will stop at 8 .
+        var substr = str.slice(2, 9);
+        console.log(substr);
+
+        // 2. str.substr(start,length)
+        // means it will start from 2 as 1..2..3 and will count till it reaches 9 for the the below code:-
+        substr = str.substr(2, 9);
+        console.log(substr);
+
+        // 3. Substring(start, end)
+        substr = str.substring(2, 9);
+        console.log(substr);
+
+        // You can say that slice and substring functions are same.
+                                    
+                                            // Replace:-
+        var afterreplace = str.replace("Hitesh", "Pankaj");
+        console.log(afterreplace);
+        // It will not affect the original string.
+        console.log(str);
+
+                                            // Uppercase and Lowercase
+                             
+         // It will convert all the character into upper case.                              
+        var upper = str.toUpperCase();
+        console.log(upper);
+        // It will convert all the character into lower case.
+        var lower = str.toLowerCase();
+        console.log(lower);
+
+        var nstring = str.concat(".This is concatenation.");
+        console.log(nstring);
+        var whitespace = "      Hello bro , how are   you?      ";
+        console.log(whitespace);
+        // trim --> Helps in discarding the space only from front and end.
+        console.log(whitespace.trim());
+
+
+    
+        // Give the character
+        var newstring = str.charAt(6);
+        console.log(newstring);
+
+        // Can do slicing in this way also but in this you can take only one character.
+        console.log(str[14]);
+
+
+    </script>
+</body>
+
+</html>

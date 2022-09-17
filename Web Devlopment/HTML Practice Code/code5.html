@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal , inline and external css</title>
+    <!-- The lower the type of css the higher its priority -->
+    <!-- SEE style.css for reference -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h3{
+            color:pink;
+            
+           font-family:'Times New Roman', Times, serif;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h3 style="color: red; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">This is CSS</h3>
+    <h3>Hey</h3>
+
+    
+</body>
+</html>
+<!-- See the inline has higher precedence therefore the color is red and after that  -->

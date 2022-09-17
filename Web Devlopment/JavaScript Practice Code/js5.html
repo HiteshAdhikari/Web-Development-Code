@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scope and conditionals</title>
+    <style>
+        body{
+            background-color: red;
+           
+        }
+        div {
+            text-align: center;
+            border: 3px solid green;
+            background-color: rgb(247, 124, 124);
+            height: 7rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><i> Wrote this to see site is working or not</i></h1>
+        <p>Yep site is working</p>
+    </div>
+    <script>
+    // var string1 = "This is a string";
+    // var string1 = "This is a string2";
+    // console.log(string1);
+
+    // var is not a good practise so , from today we will use let (which is same as var but in this we can have global and local variable.)
+
+    let a = "u";
+    //     {
+    // let a = "u6";
+    // console.log(a)
+    // In this a is local variable therefore u6 will be printed.This a is limited to this block only.
+    // }
+    console.log(a)
+    // Here, u will be printed because global a is declared.
+
+    const word = "This cannot be changed"; 
+    // const can't be redeclared throughout the program. 
+    // word = "I want to change this. This cannot be changed";
+    console.log(word);
+
+                    // If-else Loop
+    let age = 34;
+    if(age>18){
+        console.log("You can drink water");
+    }
+    else if(age==2){
+        console.log("Age is 2")
+    }
+    else if(age==5){
+        console.log("Age is 5")
+    }
+    else{
+        console.log("You can drink Cold Drink");
+    }
+                            // Switch-case 
+    const cups = 42; 
+    switch (cups) {
+        case 4:
+            console.log("The value of cups is 4")
+            break;
+
+        case 41:
+            console.log("The value of cups is 41")
+            break;
+
+        case 42:
+            console.log("The value of cups is 42")
+            break;
+
+        case 43:
+            console.log("The value of cups is 43")
+            break;
+    
+        default:
+            console.log("No case matched")
+            break;
+    }
+
+
+    </script>
+</body>
+</html>
