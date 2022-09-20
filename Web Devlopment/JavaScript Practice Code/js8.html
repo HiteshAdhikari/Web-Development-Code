@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt and Confirm</title>
+    <style>
+        body{
+            background-color: rgb(146, 146, 241);
+        }
+       div >p{
+        border: 4px solid green;
+        background-color: brown;
+         display: flex;
+         justify-content: center; 
+        text-decoration-style: double;}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+        In this we are using alert , prompt and confirm which will be shown at bar. You have to go through this otherwise you cannot perform any task in that website untill and unless you solve ths.</p>
+    </div>
+    
+</body>
+<script>
+            // Using alert and it doesn't return anything
+      // let greet = alert("Welcome sir!! To our website ");
+     // console.log(greet);
+
+              //  Using prompt and it return 
+        // let name = prompt("What's your name and how old are you?", "Hitesh Adhikari and I am 3 year old");
+        // console.log(name);
+
+            //  Using Confirmation and it return(it return true(ok) and false(cancel) ) also 
+        // let submit = confirm("Please check the details one more time by clicking on CANCEL else click on OK to go forward ");
+        // console.log(submit);
+
+
+                    // Code For allowing age greater than 18 in club
+            alert("Carefull your age should be above or equal to 18");
+            // alert will display the message
+           let childage= prompt("Enter your age","Your age");
+        //   will take input from prompt 
+        confirm(`Confrim your age is ${childage} by clicking on OK if not than click on CANCEL `)
+        // confirm will ask is the age you written is correct or not 
+
+        // Than the condition will be checked and the code will be excecuted according to the condition.
+           if(childage>=18){
+            alert("Yup you can enter in the club");
+           }
+           else{
+            alert("You can't enter in the club")
+           }
+
+    
+</script>
+</html>
