@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin,Padding and box-sizing</title>
+</head>
+
+<style>
+    /* These are the default style whatever written in this will apply in all the class and id and also you can override them. 
+    * body are the default styles. */
+    * {
+       
+        box-sizing: border-box;
+        /* In this the width of the box will not change. Instead the content will adjust according to it. */
+      
+        padding: 0;  /* This is default value  */
+          margin: 0; /* This is default value  */
+    }
+
+    body {
+
+        background-color: #f1eb63;
+
+    }
+
+    .box {
+        border: 5px solid #120586ab;
+        width: 500px;
+        /* padding-top: 34px;
+       padding-bottom: 24px;
+       padding-left: 34px;
+       padding-right: 34px; */
+
+        /* Can we written in two  method also:-  */
+        /*              First Way                       */
+      
+        /*  padding: top right bottom left;(You can remember this goes in clockwise direction) */
+           /* padding : 12px 13px 23px 19px; */
+         /* (You can see width is increasing if we increase the padding area  but the width shouldn't change therefore here we use box-sizing) */
+
+        /*               Second ways                   */
+        /* padding: (top/bottom)  (left/right); (If you give one number than it will applied to the both parts  like 23px is applied to both top and bottom and 32px applied to both left and right) */
+         padding: 23px 32px;
+
+        /* margin-top: 12px;
+       margin-bottom: 22px;
+       margin-left: 52px;
+       margin-right: 42px; */
+
+        /* Can also be written in two ways :- */
+          /*              First Way                       */
+          
+        /*  margin: top right bottom left;( You can remember this goes in clockwise direction ) */
+        /* margin: 12px 13px 14px 18px; */
+
+        /*              Second Way                       */
+        /* margin: (top/bottom) (right/left) */
+        margin: 12px 34px;
+
+
+        /* For good representation  */
+        border-radius: 32px;
+    }
+    
+</style>
+
+<body>
+    <div class="box">
+        <h4> This is the first cointainer </h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, in, exercitationem laborum quasi culpa
+            corporis error molestias reprehenderit vero cumque ipsam voluptates dolorum?</p>
+    </div>
+
+    <div class="box">
+        <h4> This is the second cointainer </h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum placeat ipsam aliquid ducimus eaque
+            perferendis fugiat maxime iure quod ex!</p>
+    </div>
+
+    <div class="box">
+        <h4> This is the third cointainer </h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi autem sunt praesentium voluptatum quod
+            eveniet.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width and background </title>
+    <style>
+        #first{
+            color: green;
+            background-color: lightpink;
+            height: 100px;
+            width: 300px;
+            /* border: 2px;     
+            border-style: solid;
+            border-color: darkorange; */
+            /* Can do the above in this ways also  */
+             border: 2px solid darkcyan;
+        }
+        #second{
+            color: green;
+            background-color:orangered;
+            height: 100px;
+            width: 300px;
+            border-top: 3px solid red;
+            border-bottom: 4px solid teal;
+            border-left: 3px solid yellow;
+            border-right: 4px solid darkkhaki;
+            border-radius: 30px; /*This will cut the edges and make them round*/
+
+            /* Also you can change individual radius side like top-right,bottom-left etc */
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 80px;
+        
+        }
+        #third{
+            color: green;
+            background-color: white;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRla_VyiXYfVEBrFyLrFpPEVE4NwHjVOctA-w&usqp=CAU);
+            /*You can attach file(for this the file should be uploaded or present ) or link in this*/
+            border: 2px solid rosybrown;
+
+            background-repeat: no-repeat;
+            /* This wil stop the repeatetion in background */
+
+            height: 500px;
+            width: 750px;
+
+            /*From this you can adjust the position of the image, the first word can be center/bottom/top and second word can be left/right */
+            
+            /* background-position: (top/bottom)  (left/right);  */
+             background-position: center center;  
+
+             /* You can also write in this way*/
+            /* background-position: 15px 230px ;   */
+           
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div id="first">
+     <h2>Hey, This is heading</h2>
+     <p>How is this ?</p>
+    </div>
+
+    <div id="second">
+     <h2>Hey, This is second heading</h2>
+     <p>How is this ?</p>
+    </div>
+
+    <div id="third">
+     <h2>Hey, This is heading</h2>
+     </div>
+</body>
+</html>

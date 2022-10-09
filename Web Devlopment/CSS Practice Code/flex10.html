@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transition </title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .cointainer{
+            display: flex;
+           justify-content: center;
+        }
+    .box{
+        margin: 3px;
+        display: flex;
+         justify-content: center;
+        align-items: center;
+        
+        background-color: teal;
+        width: 300px;
+         height: 240px;
+          transition-property:all;
+          /* In this, you can type the particular property you want to see as transition like width, height ,background-color etc and if you want to see for all than type all  */
+
+          /* Transition have same property as animation and keyframes 
+          Refer (flex9.html) */
+         transition-duration: 1s;
+         /* transition-delay: .2s; */
+         transition-timing-function: ease-out;
+
+    }
+
+    /* This will help in taransition. */
+    .box:hover{
+        background-color: aquamarine;
+        width: 500px;
+        height: 400px;
+        font-style: italic;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+    .box2{
+        margin: 3px;
+        display: flex;
+         justify-content: center;
+        align-items: center;
+        
+        background-color: teal;
+        width: 300px;
+         height: 240px;
+          transition-property:width;
+         transition-duration: 1s;
+         transition-timing-function: ease-out;
+
+    }
+    .box2:hover{
+        background-color: aquamarine;
+        width: 500px;
+        height: 400px;
+        font-style: italic;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    </style>
+
+    </head>
+    <body>
+        <div class="cointainer">
+            <div class="box">
+                Hello, Hover to see the transitions.
+            </div>
+            <div class="box2">
+                Hello, Hover to see the transitions.
+            </div>
+            <div class="box2">
+                Hello, Hover to see the transitions.
+            </div>
+            <div class="box3">
+                Hello, Hover to see the transitions.
+            </div>
+        </div>        
+    </body>
+    </html>
