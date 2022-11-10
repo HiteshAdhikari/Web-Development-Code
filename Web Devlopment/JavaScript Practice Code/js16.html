@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+    <script>
+
+//              JSON It is commonly used for transmitting data in web applications 
+//   (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).
+        let jsonObj = {
+            name: "Hitesh ",
+            personality: "shy, aggressive",
+            friend: "Aman Kumar",
+            food: "Fries" 
+        } 
+        // console.log(jsonObj.personality);
+
+        console.log(jsonObj);
+        // JSON.stringify is a method/function to convert array, object or anything in string type.
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        // After converting to string you can use same funtion which are in string .
+        myJsonStr = myJsonStr.replace('Hitesh ', 'Henry');
+        console.log(myJsonStr)
+            
+        // Parse means converting the string to their original data type .
+        let newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj)
+
+        let ar1 = ["hitesh", "Henry", 12, 34.4];
+       ar1.forEach(tiger = element => {
+        console.log("GOod Morning ," + element);
+       });    
+        // for(element of ar1){
+        //     console.log(element);
+        // }
+        
+            
+        12, 23 ,"pankaj", 12.89, 'U'
+
+
+    </script>
+</body>
+</html>
+

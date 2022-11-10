@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript SetTimeOut and SetInterval</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+    console.log("This is tutorial 12");
+    // setTimeout --> Allow us to run the function once after the interval of time.
+    // setInterval --> Allow us to run the function repeatedly after the interval of time.
+
+    function greet(name, byeText){
+        console.log("Hello Good Morning" + name + " " + byeText);
+    }
+    // let timeOut = setTimeout(greet, 3000, " Hitesh.", "How are you ?");
+    // every setTimeout has it's own unique identity.
+    // console.log(timeOut);
+
+    // clearTimeout(timeOut);
+    // This will remove/clear everything present in timeOut.
+
+    // setTimeout(greet(), 12000); --> Wrong as it is calling the function inside setTimeout, we used bracket with greet ,also to verify you can see the above calling .
+
+    // intervalId = setInterval(greet, 1000, " Hitesh", "Good Night");
+    // It will print repeatedly  after 1 sec .
+    // console.log(intervalId);
+    // every setInterval has it's own unique identity.
+    // clearInterval(intervalId);
+
+    function displayTime(){
+        let time = new Date();
+        // Constructor
+        // Stored the date and time
+        console.log(time);
+        // Printing in console.
+        document.getElementById('time').innerHTML = time;
+        // Putting wherever the element id is 'time'.
+    }
+    // setInterval(displayTime,  1000);
+    // This will print the time repeatedly after 1 sec.
+    </script>
+</body>
+</html>

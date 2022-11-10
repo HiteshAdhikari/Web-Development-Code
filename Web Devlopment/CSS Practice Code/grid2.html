@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .grid{
+            display: grid;
+            /* fr --> means fraction  / it automatically adjust to the height of that item*/
+            /* Don't grid-auto-rows/column and grid-tempate-rows/column: repeat() simultaneously. */
+            
+             grid-template-rows: 2fr 7fr; 
+            /* (It sets the row only for 2 rows. You can do thsifro 4 or 5rows and so on . ) */
+             grid-auto-rows: 4fr ;  /* This will give the size to  all remaining rows. */ 
+            /* grid-template-columns:4fr 3fr; */
+            /* grid-auto-columns: 4fr; This will give the size to  all remaining columns  */
+            grid-template-columns: repeat(4, 2fr);
+              /* In column this repeat is working over the grid-template-columns:4fr 3fr;   */
+        }
+        .box{
+            border:  2px solid rgb(251, 255, 0);
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-8</div>
+
+    </div>
+    
+</body>
+</html>

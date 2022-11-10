@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibllity and Z-index</title>
+    <!-- Visiblity only works on absolute , positions -->
+    <style>
+        .red{
+            width: 150px;
+            height:100px;
+            
+        }
+        /* Remember while using z-index it will not work on static position.
+        It only works on relative,absolute, sticky & fixed  */
+        #box1{
+            position: absolute; 
+             top :34px; 
+            z-index: 89;
+            /*(You can after declaring position(also top) the higher the value of Z-index that element will come above the other which have low z-index will be overlapped by the hgher Z-index ) */
+           background-color:red;
+        }
+        #box2{
+             position: absolute;
+             top:59px;
+             z-index: 76;
+            /* (As you can see it has low z-index value therefore the box1 will overlap box2 means we will see red first and than blue in its back.) */  
+           background-color: blue;
+        }
+        #box3{
+    
+            /* IMPORTANT READ THIS */
+
+
+            /* display:none; */
+            /* (In this the element is hidden as well as the space occupied by it will be covered by others.) */ 
+
+
+         /* visibility:hidden; */
+            /* (In hidden->The element is hidden but it leaves a space. Visible is the default value of visiblility  ) */ 
+           background-color:lime;
+        }
+        #box4{
+           background-color:purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red" id="box1"></div>
+    <div class="red" id="box2"></div>
+    <div class="red" id="box3"></div>
+    <div class="red" id="box4"></div>
+
+</body>
+</head>

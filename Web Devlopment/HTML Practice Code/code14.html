@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-block</title>
+    <style>
+        *{
+            box-sizing: border-box;/*It helps in including padding , margin in width */
+        }
+        header {
+            /* Header is a block element -> It takes a whole line  */
+            width: 1000px;
+            /* Now we want to put it in center therefore to  have the header in center we have to take margin auto-> it will automatically adjust ther left and rgiht margin  */
+            margin: auto ;
+
+           
+
+            border: 3px solid red;
+
+        }
+
+        img {
+            /* img is inline element-> It only takes the required space. */
+            display: block;
+            margin: auto;
+            width: 134px;
+        }
+
+        h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .box {
+            color: rgb(250, 68, 98);
+            border: 3px solid rgba(107, 255, 1, 0.877);
+            background-color: black;
+            margin:14px 18px;
+            padding:0px 12px;
+            /* why we choose inline-block becz we want to take that div required space as well as we can change the width. Therefore, in this way we can have other block/content be in same line.
+            if we choose inline-> You can see the para written in it will overflow. 
+            if we choose block-> You can see that after adjusting the width  we can't take the other block in same line. */
+            display: inline-block;
+            width: 30%; 
+        }
+        .container{
+            /* border: 4px solid black; */
+            margin:auto;
+            width:1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="">
+        <h3>Welcome to Hitesh Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>This is heading </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure ratione eius, debitis dolorem
+                laboriosam beatae architecto est mollitia, rerum maiores dignissimos, et temporibus ea nihil libero
+                explicabo repudiandae recusandae voluptatem corrupti illum. Odit.</p>
+        </div>
+        <div class="box">
+            <h4>This is heading </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure ratione eius, debitis dolorem
+                laboriosam beatae architecto est mollitia, rerum maiores dignissimos, et temporibus ea nihil libero
+                explicabo repudiandae recusandae voluptatem corrupti illum. Odit.</p>
+        </div>
+        <div class="box">
+            <h4>This is heading </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure ratione eius, debitis dolorem
+                laboriosam beatae architecto est mollitia, rerum maiores dignissimos, et temporibus ea nihil libero
+                explicabo repudiandae recusandae voluptatem corrupti illum. Odit.</p>
+        </div>
+    </div>
+</body>
+
+</html>

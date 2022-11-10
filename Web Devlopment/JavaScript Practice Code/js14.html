@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow functions tutorial.
+    </div>
+    <script>
+    // Arrow function --> shortcut method for calling function.
+    // let greet =  () => {
+    //     console.log('Good morning');
+    // }
+
+    let greet =  () => console.log('Good morning');
+    // This is just a function declaration.
+    
+
+    // let sum2 = (a, b)=>{
+    //     return a+b;
+    // };
+
+
+    let sum2 = (a, b) => a+b; 
+    let half = a => a/2;  
+    let st;
+
+    // function greet() {
+    //     console.log('Good morning');
+    // }
+
+    greet();
+ 
+    // In this we declared the function within the method of setTimeout.
+    setTimeout(hello = () => {
+        console.log("We are inside settimeout");
+    }, 3000); 
+
+    // let greeting = "Hello bro";
+    // let names= ["henryy", "hitsh ", "SkihellF", "yup"];
+
+    let obj1={
+        greeting: "Good Morning",
+        names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        speak(){
+            // this means that the method will be applied to the term inside the object .
+            // You can see by removing the this and comment out the text on 44th line .
+            this.names.forEach( (student)=>{
+                // this greeting means the terms inside the object which is greeting is called here.
+                // You can see by removing the this and comment out the text on 43th line .
+                console.log(this.greeting + ", hey why are you here " + student);
+            });
+        }
+    }
+    obj1.speak();
+    </script>
+</body>
+</html>

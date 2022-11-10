@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positon </title>
+    <style>
+        /* Position:static(default), relative, absolute, sticky, fixed; */
+        .class{
+            /* I want to have the box in same line ,so we will use inline-block */
+            display: inline-block;
+            border:1px solid red;
+        }
+        #box3{
+                             /* Relative */
+             
+            position: relative;
+            /* (You can see it leaves a gap. This is relative)*/
+            top:12px;
+            left:34px;  
+                             /* absolute */
+             /* position: absolute; */
+            /*(In this you can move object anywhere without leaving gap of its original position)*/
+            /* top: 12px;
+            right:23px;  */
+                                /* Sticky */
+            /* position:sticky; */
+            /* (You can see it sticks to the position you give,if you scroll it will again go to the point where it was) */
+             /* top:4px;
+            right:23px;  */
+                                /* Fixed */
+            /* position:fixed; */
+             /* (You can see it fixed to the position you give, it remains in it's position even you scroll.)  */
+           /* top:46px;
+            right:23px; */
+            
+
+
+        }
+        .cointainer{
+            border: 3px solid green;
+            width:1123px;
+            height:1222px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cointainer">
+        <div class="class" id="box1">Hello </div>
+        <div class="class" id="box2"> BRO </div>
+        <div class="class" id="box3">WHAT's</div>
+        <div class="class" id="box4">UP</div>
+    </div>
+    
+</body>
+</html>
